@@ -2,7 +2,7 @@ require 'pry'
 class Hash
   def keys_of(*arguments)
     array_of_keys = []
-    if argument.kind_of?(Array) == true
+
     arguments = arguments.join
     if self.values.include?(arguments)
       self.each do |key, value|
