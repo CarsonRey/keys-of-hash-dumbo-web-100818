@@ -1,26 +1,10 @@
 require 'pry'
 class Hash
   def keys_of(*arguments)
-    array_of_keys = []
-    self.each do |key, value|
-      if arguments.include?(value)
-        array_of_keys << key
-      end
-    end
-#     if arguments.kind_of?(Array) == true
-#       arguments = arguments.join
-#       result = self.each do |key, value|
-#                 if value == arguments
-#                   array_of_keys << key
-#                 end
-#                 end
-#     else
-#         result
-#       end
-#     end
-     array_of_keys
+    self.collect do |key, value|
+      key if arguments.include?(value)
 end
-
+end
 end
 
 # This method should take an undefined number of arguments, using the splat operator, 
