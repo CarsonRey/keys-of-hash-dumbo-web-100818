@@ -7,7 +7,6 @@ class Hash
       self.each do |key, value|
         if value == arguments
           array_of_keys << key
-          puts key
         else
           next
         end
