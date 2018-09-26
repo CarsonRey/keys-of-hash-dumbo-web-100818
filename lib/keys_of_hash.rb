@@ -6,7 +6,6 @@ class Hash
       arguments = arguments.join
       result = if self.values.include?(arguments)
               self.each do |key, value|
-                binding.pry
                 if value == arguments
                   array_of_keys << key
                 else
