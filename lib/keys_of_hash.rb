@@ -2,18 +2,20 @@ require 'pry'
 class Hash
   def keys_of(*arguments)
     array_of_keys = []
-
-    arguments = arguments.join
-    result = if self.values.include?(arguments)
-            self.each do |key, value|
-              if value == arguments
-                array_of_keys << key
-              else
-                next
+    if argument.kind_of?(Array) == true
+      arguments = arguments.join
+      result = if self.values.include?(arguments)
+              self.each do |key, value|
+                if value == arguments
+                  array_of_keys << key
+                else
+                  next
+                end
               end
-            end
-            end
-    
+              end
+    else
+      
+    end
     array_of_keys
 end
 end
