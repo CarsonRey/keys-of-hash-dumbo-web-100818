@@ -10,8 +10,6 @@ class Hash
                 end
                 end
     else
-      arguments.each do |x|
-        arguments = x 
         result
       end
     end
