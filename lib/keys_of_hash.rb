@@ -1,9 +1,13 @@
 require 'pry'
 class Hash
   def keys_of(*arguments)
+    array_of_keys = []
     self.collect do |key, value|
-      key if arguments.include?(value)
-end
+      if arguments.include?(value)
+        array_of_keys << key
+      end
+    end
+     array_of_keys
 end
 end
 
