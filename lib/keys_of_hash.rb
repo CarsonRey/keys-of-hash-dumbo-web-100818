@@ -4,13 +4,11 @@ class Hash
     array_of_keys = []
     if arguments.kind_of?(Array) == true
       arguments = arguments.join
-      result = 
-              self.each do |key, value|
+      result = self.each do |key, value|
                 if value == arguments
                   array_of_keys << key
                 end
                 end
-             
     else
       result
     end
