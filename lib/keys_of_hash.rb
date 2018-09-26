@@ -14,6 +14,7 @@ class Hash
                 end
               end
     else
+      binding.pry
       result
     end
     array_of_keys
