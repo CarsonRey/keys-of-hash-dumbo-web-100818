@@ -18,9 +18,9 @@ class Hash
 #         result
 #       end
 #     end
-#     array_of_keys
+     array_of_keys
 end
-array_of_keys
+
 end
 
 # This method should take an undefined number of arguments, using the splat operator, 
