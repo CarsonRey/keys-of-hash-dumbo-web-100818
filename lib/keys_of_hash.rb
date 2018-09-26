@@ -1,6 +1,6 @@
 require 'pry'
 class Hash
-  def keys_of(*arguments, argument)
+  def keys_of(other, *arguments)
     array_of_keys = []
     if arguments.kind_of?(Array) == true
       arguments = arguments.join
