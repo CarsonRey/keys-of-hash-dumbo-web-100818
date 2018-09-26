@@ -1,7 +1,12 @@
 require 'pry'
 class Hash
   def keys_of(*arguments)
-#     array_of_keys = []
+    array_of_keys = []
+    self.collect do |key, value|
+      if arguments.include?(value)
+        key
+      end
+    end
 #     if arguments.kind_of?(Array) == true
 #       arguments = arguments.join
 #       result = self.each do |key, value|
