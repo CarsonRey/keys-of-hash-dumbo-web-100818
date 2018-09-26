@@ -11,10 +11,10 @@ class Hash
                 else
                   next
                 end
-              end
+                end
               end
     else
-      
+      result
     end
     array_of_keys
 end
