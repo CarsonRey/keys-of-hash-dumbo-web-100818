@@ -10,7 +10,9 @@ class Hash
                 end
                 end
     else
-      result
+      arguments.each do |x|
+        arguments = x 
+        result
     end
     array_of_keys
 end
