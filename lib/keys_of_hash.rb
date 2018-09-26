@@ -19,7 +19,7 @@ class Hash
 #       end
 #     end
 #     array_of_keys
-# end
+end
 end
 
 # This method should take an undefined number of arguments, using the splat operator, 
