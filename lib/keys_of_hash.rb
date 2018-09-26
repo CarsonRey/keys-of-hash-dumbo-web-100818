@@ -13,6 +13,7 @@ class Hash
       arguments.each do |x|
         arguments = x 
         result
+      end
     end
     array_of_keys
 end
