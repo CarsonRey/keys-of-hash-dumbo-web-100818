@@ -8,7 +8,7 @@ class Hash
               self.each do |key, value|
                 binding.pry
                 if value == arguments
-                  if value == arguments
+                  array_of_keys << key
                 else
                   next
                 end
