@@ -4,15 +4,15 @@ class Hash
     array_of_keys = []
 
     arguments = arguments.join
-    if self.values.include?(arguments)
-      self.each do |key, value|
-        if value == arguments
-          array_of_keys << key
-        else
-          next
-        end
-      end
-      end
+    result = if self.values.include?(arguments)
+            self.each do |key, value|
+              if value == arguments
+                array_of_keys << key
+              else
+                next
+              end
+            end
+            end
     
     array_of_keys
 end
