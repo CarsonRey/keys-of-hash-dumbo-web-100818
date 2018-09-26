@@ -15,8 +15,7 @@ class Hash
                 end
               end
     else
-      
-      result
+      puts result
     end
     array_of_keys
 end
